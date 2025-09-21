@@ -78,5 +78,42 @@ body {
     font-weight: 500;                       /* Толщина шрифта */
     line-height: 100%;                     /* Межстрочный интервал */
     margin-top: 20px;
+    margin-bottom: 10px;
+}
 
+.name {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: rgba(44, 45, 53, 1);
+    font-size: 30px;                        /* Размер шрифта */
+    font-weight: 500;                       /* Толщина шрифта */
+    line-height: 100%;                     /* Межстрочный интервал */
+    margin-bottom: 8px;
+}
+
+.materials {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: rgba(44, 45, 53, 1);
+    font-size: 18px;                        /* Размер шрифта */
+    font-weight: 500;                       /* Толщина шрифта */
+    line-height: 100%;                     /* Межстрочный интервал */
+    margin-bottom: 30px;
+}
+
+.price {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: rgba(89, 141, 102, 1);
+    font-size: 24px;                        /* Размер шрифта */
+    font-weight: 500;                       /* Толщина шрифта */
+    line-height: 100%;                     /* Межстрочный интервал */
+    margin-bottom: 20px;
+}
+
+.btn2 {
+    border: 1px solid rgba(89, 141, 102, 1);
+    color: rgba(89, 141, 102, 1);
+    background-color: transparent; /* фон полностью прозрачный */
+    font-size: 20px;                        /* Размер шрифта */
+    font-weight: 500;                       /* Толщина шрифта */
+    line-height: 100%;                     /* Межстрочный интервал */
+    padding: 21px 106.5px 21px 106.5px;
 }

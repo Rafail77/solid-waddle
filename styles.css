@@ -1,0 +1,67 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    width: 1300px;
+    height: 512px;
+    margin-top: 50px;
+}
+.card {
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    gap: 53px;
+    padding: 40px;
+    border-radius: 32px;
+}
+
+.card-block {
+
+}
+
+.badge {
+    background-color: rgba(25, 25, 25, 1);  /* Цвет фона */
+    color: rgba(255, 255, 255, 1);          /* Цвет текста */
+    font-size: 17px;                        /* Размер шрифта */
+    font-weight: 400;                        /* Толщина шрифта */
+    line-height: 27px;                        /* Межстрочный интервал */
+    width: fit-content;                      /* Ширина по содержимому */
+    padding: 0 16px;                          /* сверху/снизу 0, слева/справа 16px */
+    border-radius: 6px;
+    margin-bottom: 48.44px;
+}
+
+.episode {
+    color: rgba(17, 141, 168, 1);         /* Цвет текста */
+    font-size: 17px;                        /* Размер шрифта */
+    font-weight: 400;                        /* Толщина шрифта */
+    line-height: 27px;                       /* Межстрочный интервал */
+    margin-bottom: 17.56px;
+}
+
+.title {
+    color: rgba(255, 255, 255, 1);
+    font-size: 64px;                        /* Размер шрифта */
+    font-weight: 400;                        /* Толщина шрифта */
+    line-height: 70.4px;                     /* Межстрочный интервал */
+    margin-bottom: 28px;
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 22px;                        /* Размер шрифта */
+    font-weight: 400;                       /* Толщина шрифта */
+    line-height: 33px;                     /* Межстрочный интервал */
+    margin-bottom: 18px;
+}
+
+.btn {
+    background-color: rgba(17, 141, 168, 1);
+    color: rgba(255, 255, 255, 1);
+    width: 208px;
+    height: 51px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;                        /* Размер шрифта */
+    font-weight: 400;                       /* Толщина шрифта */
+    line-height: 27px;                     /* Межстрочный интервал */
+    padding: 12px 15px 12px 20px;
+}

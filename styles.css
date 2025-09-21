@@ -1,8 +1,9 @@
 body {
+    background-color: rgb(80, 80, 80);
     font-family: 'DM Sans', sans-serif;
     width: 1300px;
-    height: 512px;
-    margin-top: 50px;
+    margin-top: 80px;
+    margin-left: 80px;
 }
 .card {
     background-color: rgba(0, 0, 0, 1);
@@ -60,4 +61,22 @@ body {
     font-weight: 400;                       /* Толщина шрифта */
     line-height: 27px;                     /* Межстрочный интервал */
     padding: 12px 15px 12px 20px;
+}
+
+.card2 {
+    padding: 20px 20px 30px 20px;
+    background-color: rgba(225, 237, 230, 1);
+    width: fit-content;
+    margin-top: 106px;
+    margin-bottom: 100%;
+}
+
+.autor {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: rgba(134, 146, 139, 1);
+    font-size: 18px;                        /* Размер шрифта */
+    font-weight: 500;                       /* Толщина шрифта */
+    line-height: 100%;                     /* Межстрочный интервал */
+    margin-top: 20px;
+
 }

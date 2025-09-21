@@ -13,10 +13,6 @@ body {
     border-radius: 32px;
 }
 
-.card-block {
-
-}
-
 .badge {
     background-color: rgba(25, 25, 25, 1);  /* Цвет фона */
     color: rgba(255, 255, 255, 1);          /* Цвет текста */

@@ -68,7 +68,6 @@ body {
     background-color: rgba(225, 237, 230, 1);
     width: fit-content;
     margin-top: 106px;
-    margin-bottom: 100%;
 }
 
 .autor {
@@ -116,4 +115,31 @@ body {
     font-weight: 500;                       /* Толщина шрифта */
     line-height: 100%;                     /* Межстрочный интервал */
     padding: 21px 106.5px 21px 106.5px;
+}
+
+.card3 {
+    background-color: rgba(255, 255, 255, 1);
+    width: 360px;
+}
+
+.forPadding {
+    padding: 16px;
+}
+
+.title3 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: rgba(0, 154, 240, 1);
+    font-size: 20px;                        /* Размер шрифта */
+    font-weight: 700;                       /* Толщина шрифта */
+    line-height: 100%;                     /* Межстрочный интервал */
+    margin-bottom: 16px;
+}
+
+.subtitle3 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: rgba(32, 40, 66, 1);
+    font-size: 16px;                        /* Размер шрифта */
+    font-weight: 400;                       /* Толщина шрифта */
+    line-height: 100%;                     /* Межстрочный интервал */ 
+    margin-bottom: 16px; 
 }

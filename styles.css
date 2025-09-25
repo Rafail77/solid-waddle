@@ -4,6 +4,7 @@
       font-family: 'DM Sans', sans-serif;   /* Базовый шрифт страницы */
       width: 1300px;                        /* Фиксированная ширина макета (как у вас) */
       margin-top: 80px;                     /* Отступ сверху */
+      margin-bottom: 150px;                 /* Отступ снизу */
       margin-left: 80px;                    /* Отступ слева */
     }
 
@@ -81,6 +82,7 @@
       padding: 20px 20px 30px 20px;         /* Внутренние отступы */
       background-color: rgba(225, 237, 230, 1);/* Светлый фон */
       width: fit-content;                   /* Под ширину контента */
+      height: 680px;
       margin-top: 106px;                    /* Вертикальный сдвиг вниз */
       border-radius: 8px;                   /* Лёгкие скругления */
     }
@@ -237,4 +239,38 @@
       margin-bottom: 12px;                  /* Отступ снизу */
       margin-left: 44px;                    /* Отступ слева */
       margin-right: 89px;                   /* Отступ справа */
+    }
+
+    .subtitle {
+      font-family: 'Montserrat', sans-serif;
+      color: rgba(46, 54, 62, 1);
+      font-size: 16px;                      /* Размер шрифта */
+      font-weight: 400;                     /* Толщина */
+      line-height: 150%;                    /* Межстрочный */
+      margin-bottom: 24px;                  /* Отступ снизу */
+      margin-left: 44px;                    /* Отступ слева */
+      margin-right: 96px;                   /* Отступ справа */
+    }
+
+    .price4 {
+      font-family: 'Montserrat', sans-serif;
+      color: rgba(67, 75, 83, 1);
+      font-size: 24px;                      /* Размер шрифта */
+      font-weight: 500;                     /* Толщина */
+      line-height: 150%;                    /* Межстрочный */
+      margin-bottom: 14px;                  /* Отступ снизу */
+      margin-left: 44px;                    /* Отступ слева */
+    }
+
+    .btn4 {
+      border: none;
+      color: rgba(46, 54, 62, 1);         /* Темный текст */
+      background-color: rgba(254, 216, 76, 1);  /* Желтый фон */
+      font-size: 18px;                      /* Размер шрифта */
+      font-weight: 500;                     /* Толщина */
+      line-height: 152%;                    /* Межстрочный */
+      padding: 20px 40px;                  /* Внутренние отступы */
+      border-radius: 8px;                   /* Скругления */
+      margin-left: 44px;                    /* Отступ слева */
+      cursor: pointer;                      /* Курсор руки */ 
     }

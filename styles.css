@@ -47,7 +47,7 @@
     }
 
     .subtitle {
-      color: rgba(255, 255, 255, 0,7);      /* Полупрозрачный белый */
+      color: rgba(255, 255, 255, 0.7);      /* Полупрозрачный белый */
       font-size: 22px;                      /* Размер шрифта */
       font-weight: 400;                     /* Толщина */
       line-height: 33px;                    /* Межстрочный */
@@ -241,7 +241,7 @@
       margin-right: 89px;                   /* Отступ справа */
     }
 
-    .subtitle {
+    .subtitle4 {
       font-family: 'Montserrat', sans-serif;
       color: rgba(46, 54, 62, 1);
       font-size: 16px;                      /* Размер шрифта */

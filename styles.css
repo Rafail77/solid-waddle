@@ -1,145 +1,240 @@
-body {
-    background-color: rgb(80, 80, 80);
-    font-family: 'DM Sans', sans-serif;
-    width: 1300px;
-    margin-top: 80px;
-    margin-left: 80px;
-}
-.card {
-    background-color: rgba(0, 0, 0, 1);
-    display: flex;
-    align-items: center;
-    gap: 53px;
-    padding: 40px;
-    border-radius: 32px;
+    /* ====== БАЗОВЫЕ СТИЛИ СТРАНИЦЫ ====== */
+    body {                                  /* Стили для всей страницы */
+      background-color: rgb(80, 80, 80);    /* Серый фон */
+      font-family: 'DM Sans', sans-serif;   /* Базовый шрифт страницы */
+      width: 1300px;                        /* Фиксированная ширина макета (как у вас) */
+      margin-top: 80px;                     /* Отступ сверху */
+      margin-left: 80px;                    /* Отступ слева */
+    }
+
+    /* ====== CARD 1 (оставляем как было) ====== */
+    .card {                                 /* Карточка №1 */
+      background-color: rgba(0, 0, 0, 1);   /* Чёрный фон */
+      display: flex;                        /* Внутри — флекс-раскладка */
+      align-items: center;                  /* Выравниваем по центру по вертикали */
+      gap: 53px;                            /* Промежуток между картинкой и текстовым блоком */
+      padding: 40px;                        /* Внутренние отступы */
+      border-radius: 32px;                  /* Скругления */
+    }
+
+    .badge {
+      background-color: rgba(25, 25, 25, 1);/* Тёмный фон плашки */
+      color: rgba(255, 255, 255, 1);        /* Белый текст */
+      font-size: 17px;                      /* Размер шрифта */
+      font-weight: 400;                     /* Толщина шрифта */
+      line-height: 27px;                    /* Межстрочный интервал */
+      width: fit-content;                   /* Ширина по содержимому */
+      padding: 0 16px;                      /* Горизонтальные отступы текста по 16px */
+      border-radius: 6px;                   /* Скругление углов */
+      margin-bottom: 48.44px;               /* Отступ снизу */
+    }
+
+    .episode {
+      color: rgba(17, 141, 168, 1);         /* Бирюзовый текст */
+      font-size: 17px;                      /* Размер шрифта */
+      font-weight: 400;                     /* Толщина */
+      line-height: 27px;                    /* Межстрочный */
+      margin-bottom: 17.56px;               /* Отступ снизу */
+    }
+
+    .title {
+      color: rgba(255, 255, 255, 1);        /* Белый заголовок */
+      font-size: 64px;                      /* Крупный размер */
+      font-weight: 400;                     /* Толщина */
+      line-height: 70.4px;                  /* Межстрочный */
+      margin-bottom: 28px;                  /* Отступ снизу */
+    }
+
+    .subtitle {
+      color: rgba(255, 255, 255, 0.7);      /* Полупрозрачный белый */
+      font-size: 22px;                      /* Размер шрифта */
+      font-weight: 400;                     /* Толщина */
+      line-height: 33px;                    /* Межстрочный */
+      margin-bottom: 18px;                  /* Отступ снизу */
+    }
+
+    .btn {
+      background-color: rgba(17, 141, 168, 1);/* Фон кнопки */
+      color: rgba(255, 255, 255, 1);        /* Белый текст */
+      width: 208px;                         /* Ширина кнопки */
+      height: 51px;                         /* Высота кнопки */
+      border: none;                         /* Без рамки */
+      border-radius: 6px;                   /* Скругления */
+      font-size: 18px;                      /* Размер шрифта */
+      font-weight: 400;                     /* Толщина */
+      line-height: 27px;                    /* Межстрочный */
+      padding: 12px 15px 12px 20px;         /* Внутренние отступы */
+      cursor: pointer;                      /* Курсор руки при наведении */
+    }
+
+    /* ====== ОБЩИЙ РЯД ДЛЯ CARD2 + CARD3 ====== */
+    .cards-row {                            /* Контейнер-строка для card2 и card3 */
+      display: flex;                        /* Включаем флекс-раскладку по горизонтали */
+      align-items: flex-start;              /* Выравниваем элементы по верхнему краю */
+      gap: 105px;                            /* Промежуток между card2 и card3 */
+      margin-top: 40px;                     /* Отступ сверху от card1 */
+    }
+    /* Порядок элементов в HTML определяет, что card3 окажется СПРАВА от card2. */
+
+    /* ====== CARD 2 ====== */
+    .card2 {                                /* Карточка №2 (товар) */
+      padding: 20px 20px 30px 20px;         /* Внутренние отступы */
+      background-color: rgba(225, 237, 230, 1);/* Светлый фон */
+      width: fit-content;                   /* Под ширину контента */
+      margin-top: 106px;                    /* Вертикальный сдвиг вниз */
+      border-radius: 8px;                   /* Лёгкие скругления */
+    }
+
+    .autor {
+      font-family: 'Raleway', Arial, sans-serif;/* Шрифт Raleway */
+      color: rgba(134, 146, 139, 1);        /* Серо-зелёный цвет */
+      font-size: 18px;                      /* Размер шрифта */
+      font-weight: 500;                     /* Толщина */
+      line-height: 100%;                    /* Межстрочный */
+      margin-top: 20px;                     /* Отступ сверху */
+      margin-bottom: 10px;                  /* Отступ снизу */
+    }
+
+    .name {
+      font-family: 'Raleway', Arial, sans-serif;/* Шрифт Raleway */
+      color: rgba(44, 45, 53, 1);           /* Тёмный текст */
+      font-size: 30px;                      /* Крупный размер */
+      font-weight: 500;                     /* Толщина */
+      line-height: 100%;                    /* Межстрочный */
+      margin-bottom: 8px;                   /* Отступ снизу */
+    }
+
+    .materials {
+      font-family: 'Raleway', Arial, sans-serif;/* Шрифт Raleway */
+      color: rgba(44, 45, 53, 1);           /* Тёмный текст */
+      font-size: 18px;                      /* Размер шрифта */
+      font-weight: 500;                     /* Толщина */
+      line-height: 100%;                    /* Межстрочный */
+      margin-bottom: 30px;                  /* Отступ снизу */
+    }
+
+    .price {
+      font-family: 'Raleway', Arial, sans-serif;/* Шрифт Raleway */
+      color: rgba(89, 141, 102, 1);         /* Зелёный */
+      font-size: 24px;                      /* Размер шрифта */
+      font-weight: 500;                     /* Толщина */
+      line-height: 100%;                    /* Межстрочный */
+      margin-bottom: 20px;                  /* Отступ снизу */
+    }
+
+    .btn2 {
+      border: 1px solid rgba(89, 141, 102, 1);/* Зелёная рамка */
+      color: rgba(89, 141, 102, 1);         /* Зелёный текст */
+      background-color: transparent;        /* Прозрачный фон */
+      font-size: 20px;                      /* Размер шрифта */
+      font-weight: 500;                     /* Толщина */
+      line-height: 100%;                    /* Межстрочный */
+      padding: 21px 106.5px;                /* Внутренние отступы */
+      border-radius: 6px;                   /* Скругления */
+      cursor: pointer;                      /* Курсор руки */
+    }
+
+    /* ====== CARD 3 ====== */
+    .card3 {                                /* Карточка №3 (статья) */
+      background-color: rgba(255, 255, 255, 1);/* Белый фон */
+      width: 360px;                         /* Фиксированная ширина */
+      height: 610px;                        /* Фиксированная высота */
+      border-radius: 8px;                   /* Скругления */
+      overflow: hidden;                     /* Прячем выступающие углы изображения */
+      margin-top: 226px;                    /* Вертикальный сдвиг вниз */
+    }
+
+
+.forPadding {                               /* Внутренний контейнер текста */
+  padding: 16px 16px 8px 16px;              /* Снизу ровно 8px */
 }
 
-.badge {
-    background-color: rgba(25, 25, 25, 1);  /* Цвет фона */
-    color: rgba(255, 255, 255, 1);          /* Цвет текста */
-    font-size: 17px;                        /* Размер шрифта */
-    font-weight: 400;                        /* Толщина шрифта */
-    line-height: 27px;                        /* Межстрочный интервал */
-    width: fit-content;                      /* Ширина по содержимому */
-    padding: 0 16px;                          /* сверху/снизу 0, слева/справа 16px */
-    border-radius: 6px;
-    margin-bottom: 48.44px;
-}
+    .title3 {
+      font-family: 'Open Sans', Arial, sans-serif;/* Шрифт Open Sans */
+      color: rgba(0, 154, 240, 1);          /* Голубой заголовок */
+      font-size: 20px;                      /* Размер шрифта */
+      font-weight: 700;                     /* Толщина */
+      line-height: 100%;                    /* Межстрочный */
+      margin-bottom: 16px;                  /* Отступ снизу */
+    }
 
-.episode {
-    color: rgba(17, 141, 168, 1);         /* Цвет текста */
-    font-size: 17px;                        /* Размер шрифта */
-    font-weight: 400;                        /* Толщина шрифта */
-    line-height: 27px;                       /* Межстрочный интервал */
-    margin-bottom: 17.56px;
-}
+    .subtitle3 {
+      font-family: 'Open Sans', Arial, sans-serif;/* Шрифт Open Sans */
+      color: rgba(32, 40, 66, 1);           /* Тёмный текст */
+      font-size: 16px;                      /* Размер шрифта */
+      font-weight: 400;                     /* Толщина */
+      line-height: 100%;                    /* Межстрочный */
+      margin-bottom: 56px;
+    }
 
-.title {
-    color: rgba(255, 255, 255, 1);
-    font-size: 64px;                        /* Размер шрифта */
-    font-weight: 400;                        /* Толщина шрифта */
-    line-height: 70.4px;                     /* Межстрочный интервал */
-    margin-bottom: 28px;
-}
+    .meta {                                  /* Строка автора и кнопки */
+      display: flex;                         /* Горизонтальное расположение */
+      align-items: center;                   /* Выравнивание по вертикали */
+      justify-content: space-between;        /* Имя слева, кнопка справа */
+      gap: 12px;                             /* Небольшой зазор */
+    }
 
-.subtitle {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 22px;                        /* Размер шрифта */
-    font-weight: 400;                       /* Толщина шрифта */
-    line-height: 33px;                     /* Межстрочный интервал */
-    margin-bottom: 18px;
-}
+    .user {                                  /* Блок с аватаром и именем */
+      display: flex;                         /* Раскладываем аватар и подписи в ряд */
+      align-items: center;                   /* Выравниваем по центру по вертикали */
+      gap: 8px;                              /* Зазор между аватаром и подписями */
+    }
 
-.btn {
-    background-color: rgba(17, 141, 168, 1);
-    color: rgba(255, 255, 255, 1);
-    width: 208px;
-    height: 51px;
-    border: none;
-    border-radius: 6px;
-    font-size: 18px;                        /* Размер шрифта */
-    font-weight: 400;                       /* Толщина шрифта */
-    line-height: 27px;                     /* Межстрочный интервал */
-    padding: 12px 15px 12px 20px;
-}
+    .avatar {
+      width: 38px;                           /* Ширина аватара */
+      height: 38px;                          /* Высота аватара */
+      border-radius: 50%;                    /* Круглая форма */
+    }
 
-.card2 {
-    padding: 20px 20px 30px 20px;
-    background-color: rgba(225, 237, 230, 1);
-    width: fit-content;
-    margin-top: 106px;
-}
+    .userName {
+      font-family: 'Open Sans', Arial, sans-serif;/* Шрифт Open Sans */
+      color: rgba(32, 40, 66, 1);            /* Тёмный текст */
+      font-size: 14px;                       /* Размер шрифта */
+      font-weight: 600;                      /* Полужирный */
+      line-height: 18px;                     /* Межстрочный */
+      margin-bottom: 4px;                    /* Отступ снизу */
+    }
 
-.autor {
-    font-family: 'Raleway', Arial, sans-serif;
-    color: rgba(134, 146, 139, 1);
-    font-size: 18px;                        /* Размер шрифта */
-    font-weight: 500;                       /* Толщина шрифта */
-    line-height: 100%;                     /* Межстрочный интервал */
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
+    .Date {
+      font-family: 'Open Sans', Arial, sans-serif;/* Шрифт Open Sans */
+      color: rgba(30, 30, 30, 0.5);          /* Полупрозрачный текст */
+      font-size: 12px;                       /* Размер шрифта */
+      font-weight: 600;                      /* Толщина */
+      line-height: 12px;                     /* Межстрочный */
+    }
 
-.name {
-    font-family: 'Raleway', Arial, sans-serif;
-    color: rgba(44, 45, 53, 1);
-    font-size: 30px;                        /* Размер шрифта */
-    font-weight: 500;                       /* Толщина шрифта */
-    line-height: 100%;                     /* Межстрочный интервал */
-    margin-bottom: 8px;
-}
+    .btn3 {
+      font-family: 'Open Sans', Arial, sans-serif;/* Шрифт Open Sans */
+      background-color: rgba(0, 154, 240, 1);/* Голубая кнопка */
+      border: none;                          /* Без рамки */
+      border-radius: 8px;                    /* Скругления */
+      color: rgba(255, 255, 255, 1);         /* Белый текст */
+      font-size: 16px;                       /* Размер шрифта */
+      font-weight: 700;                      /* Толщина */
+      line-height: 100%;                     /* Межстрочный */
+      padding: 8px 16px;                     /* Внутренние отступы */
+      cursor: pointer;                       /* Курсор руки */
+      white-space: nowrap;                   /* Не переносить текст на новую строку */
+    }
 
-.materials {
-    font-family: 'Raleway', Arial, sans-serif;
-    color: rgba(44, 45, 53, 1);
-    font-size: 18px;                        /* Размер шрифта */
-    font-weight: 500;                       /* Толщина шрифта */
-    line-height: 100%;                     /* Межстрочный интервал */
-    margin-bottom: 30px;
-}
+        /* ====== CARD 4 ====== */
+    .card4 {                                /* Карточка №3 (статья) */
+      background-color: rgba(255, 255, 255, 1);/* Белый фон */
+      width: 380px;                         /* Фиксированная ширина */
+      height: 582px;                        /* Фиксированная высота */
+      border-radius: 8px;                   /* Скругления */
+      overflow: hidden;                     /* Прячем выступающие углы изображения */
+      margin-top: 254px;                    /* Вертикальный сдвиг вниз */
+    }
 
-.price {
-    font-family: 'Raleway', Arial, sans-serif;
-    color: rgba(89, 141, 102, 1);
-    font-size: 24px;                        /* Размер шрифта */
-    font-weight: 500;                       /* Толщина шрифта */
-    line-height: 100%;                     /* Межстрочный интервал */
-    margin-bottom: 20px;
-}
-
-.btn2 {
-    border: 1px solid rgba(89, 141, 102, 1);
-    color: rgba(89, 141, 102, 1);
-    background-color: transparent; /* фон полностью прозрачный */
-    font-size: 20px;                        /* Размер шрифта */
-    font-weight: 500;                       /* Толщина шрифта */
-    line-height: 100%;                     /* Межстрочный интервал */
-    padding: 21px 106.5px 21px 106.5px;
-}
-
-.card3 {
-    background-color: rgba(255, 255, 255, 1);
-    width: 360px;
-}
-
-.forPadding {
-    padding: 16px;
-}
-
-.title3 {
-    font-family: 'Open Sans', Arial, sans-serif;
-    color: rgba(0, 154, 240, 1);
-    font-size: 20px;                        /* Размер шрифта */
-    font-weight: 700;                       /* Толщина шрифта */
-    line-height: 100%;                     /* Межстрочный интервал */
-    margin-bottom: 16px;
-}
-
-.subtitle3 {
-    font-family: 'Open Sans', Arial, sans-serif;
-    color: rgba(32, 40, 66, 1);
-    font-size: 16px;                        /* Размер шрифта */
-    font-weight: 400;                       /* Толщина шрифта */
-    line-height: 100%;                     /* Межстрочный интервал */ 
-    margin-bottom: 16px; 
-}
+    .title4 {
+      font-family: 'Montserrat', sans-serif;
+      color: rgba(46, 54, 62, 1);
+      font-size: 24px;                      /* Размер шрифта */
+      font-weight: 700;                     /* Толщина */
+      line-height: 143%;                    /* Межстрочный */
+      margin-top: 50px;                     /* Отступ сверху */
+      margin-bottom: 12px;                  /* Отступ снизу */
+      margin-left: 44px;                    /* Отступ слева */
+      margin-right: 89px;                   /* Отступ справа */
+    }
